@@ -1,0 +1,26 @@
+﻿<Window x:Class="Hash_Generator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hash_Generator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox HorizontalAlignment="Left" Height="140" Margin="11,55,0,0" VerticalAlignment="Top" Width="80">
+            <ListBoxItem Content="MD5" Selected="ListBoxItem_Selected"/>
+            <ListBoxItem Content="RIPEMD160" Selected="ListBoxItem_Selected_1"/>
+            <ListBoxItem Content="SHA1" Selected="ListBoxItem_Selected_2"/>
+            <ListBoxItem Content="SHA256" Selected="ListBoxItem_Selected_3"/>
+            <ListBoxItem Content="SHA384" Selected="ListBoxItem_Selected_4"/>
+            <ListBoxItem Content="SHA512" Selected="ListBoxItem_Selected_5"/>
+        </ListBox>
+        <Button Content="Open File" Margin="10,10,687,376" Click="Button_Click"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="387" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" Margin="453,11,0,0"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="388" TextWrapping="Wrap" VerticalAlignment="Top" Width="324" Margin="116,10,0,0"/>
+
+    </Grid>
+</Window>
